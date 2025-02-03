@@ -18,6 +18,15 @@
         .sora-font {
         font-family: "Sora", serif;
         }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(-10px); }
+        }
+
+        .bounce {
+            animation: bounce 1.5s infinite;
+        }
     </style>
 
     <script>
@@ -80,13 +89,13 @@
       <section class="container mx-auto text-center mt-24 space-y-7">
         <h1 class="font-semibold text-3xl lg:text-6xl">Freshness <span class="text-green-primary">You Can <br>
         Count</span> On, Prices You'll Love!</h1>
-        <p class="font-normal text-[16px] lg:text-xl text-neutral-500">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we've got you covered every day!</p>
+        <p class="font-normal text-[16px] lg:text-xl text-neutral-500 bounce">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we've got you covered every day!</p>
         <div class="flex justify-center">
           <img src="c2-assets/hero-vegetables.png" alt="">
         </div>
       </section>
     </header>
-    <main>
+    <main class="mb-[250px]">
       <section class="my-36 container mx-auto p-4">
         <h1 class="font-semibold text-green-primary text-4xl">Services</h1>
         <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -298,7 +307,7 @@
               <button class="btn bg-[#63B76D] text-white text-sm lg:text-xl border-none">Cook Exotic Dishes</button>
               <h3 class="text-white font-medium text-xl lg:text-4xl">UP to <span class="font-bold">20% OFF</span></h3>
             </div>
-            <div class="absolute bottom-5 right-2 transform translate-x-[10%] lg:bottom-0">
+            <div class="absolute bottom-5 right-2 transform lg:bottom-0">
               <img class="h-[172px] w-[150px] lg:h-[310px] lg:w-[352px]" src="c2-assets/dawat-mock-up.png" alt="">
             </div>
           </div>
@@ -309,13 +318,49 @@
               <button class="btn bg-[#2A4D97] text-white text-sm lg:text-xl border-none">Cook Exotic Dishes</button>
               <h3 class="text-white font-medium text-xl lg:text-4xl">UP to <span class="font-bold">20% OFF</span></h3>
             </div>
-            <div class="absolute bottom-7 right-4 transform translate-x-[1%] lg:bottom-2">
+            <div class="absolute bottom-7 right-4 transform lg:bottom-2">
               <img class="h-[159px] w-[120px] lg:h-[287px] lg:w-[175px]" src="c2-assets/india-gate-mock-up.png" alt="">
             </div>
           </div>
         </div>
       </section>
     </main>
+    <footer class="relative bg-green-primary w-full pt-[200px] pb-7 text-white px-3 lg:px-[140px]">
     
+      <div class="absolute -top-1/2 left-1/2 -translate-x-1/2 w-[358px] h-[467px] lg:w-[1320px] lg:h-[457px] bg-[#EFEBE3] text-black p-4 lg:p-12 rounded-[24px] flex flex-col lg:flex-row justify-around">
+          <div class="flex justify-center lg:justify-normal">
+            <img src="c2-assets/vegetable-busket.png" alt="" class="w-[232px] h-[182px] lg:w-[442px] lg:h-[348px]">
+          </div>
+          <div class="flex flex-col justify-center text-center lg:text-start">
+            <h2 class="text-xl lg:text-4xl font-semibold mt-2">Get Grocery News!</h2>
+          <p class="text-xl mt-3">Exclusive training tips, tricks, product deals and more.</p>
+          <input type="email" placeholder="Enter email..." class="border p-3 w-full mt-4 rounded">
+          <button class="bg-green-primary text-white px-4 py-2 mt-4 w-[164px] rounded-lg">Subscribe</button>
+          </div>
+      </div>
+  
+      <div class="lg:mt-44 mt-8 flex flex-col lg:flex-row justify-between">
+        <div>
+          <img src="c2-assets/logo-footer.png" alt="">
+          <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry friends</p>
+        </div>
+        <div class="mt-4 text-xl">
+          <a>Product</a><br>
+          <a>Services</a><br>
+          <a>Contact us</a><br>
+        </div>
+  
+        <div class="mt-4 lg:flex lg:justify-end lg:items-end">
+          <div>
+            <h2>Follow us</h2>
+            <div class="flex space-x-4">
+            <a href="" class="text-white text-xl"><img src="c2-assets/instagram.png" alt=""></a>  
+            <a href="" class="text-white text-xl"><img src="c2-assets/linkedin.png" alt=""></a>  
+            <a href="" class="text-white text-xl"><img src="c2-assets/instagram.png" alt=""></a>
+            </div>
+          </div> 
+        </div>
+      </div>
+  </footer>
 </body>
 </html>
